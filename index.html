@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal.ai</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon.ico">
+
+
+</head>
+
+<body>
+    <section data-scroll-section class="home">
+        <div id="particles-js"></div> <!-- Container for particles -->
+        <div class="sectionWrapper">
+
+            <div class="title">
+                <h1 style="margin-bottom: 0;">Legal.ai</h1>
+                <h2 style="margin-left: 30px; margin-top: -4px;">Your personalized legal solution</h2>
+            </div>
+
+            <div class="homeImage">
+                <img src="logo.png" alt="logo" class="responsive">
+            </div>
+
+            <div class="btnContainer">
+                <button class="btn" onclick="document.getElementById('about').scrollIntoView();">
+                    <span class="span_arrow">&gt;</span>
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+    <section data-scroll-section class="about" id="about" style="height: 100vh; overflow-y: hidden;">
+        <div class="sectionWrapperabout">
+            <div class="heading" id="headingRef">
+                What do we do?
+            </div>
+            <div class="content" id="contRef">
+                Legal documentation can be a complicated and time-consuming process, especially for individuals and
+                small businesses who may not have access to legal resources. In addition, the language and jargon used
+                in legal documents can be difficult for non-lawyers to understand, which can lead to errors and
+                misunderstandings.
+                <br />
+                We provide AI-powered solutions that can simplify legal documentation for individuals and small
+                businesses in India, by automatically drafting legal documents in plain language and using
+                easy-to-understand terms.
+            </div>
+
+            <!-- Document Generator Card -->
+            <a class="linkcard1" href="/generate.html" replace>
+                <div class="card1" style="opacity: 1; visibility: visible;">
+                    Document Generator
+                </div>
+                <img class="aboutimg" src="aboutimg1.jpeg" alt="aboutimg1" height="1000" />
+            </a>
+
+            <!-- Language Simplification Card -->
+            <a class="linkcard2" href="/simplify.html" replace>
+                <div class="card2" style="opacity: 1; visibility: visible;">
+                    Key phrase extractor
+                </div>
+                <img class="aboutimg" src="./aboutimg2.jpeg" alt="aboutimg2" height="1000" />
+            </a>
+
+            <!-- Language Translation Card -->
+            <a class="linkcard3" href="/translate.html" replace>
+                <div class="card3" style="opacity: 1; visibility: visible;">
+                    Language Translation
+                </div>
+                <img class="aboutimg" src="aboutimg3.jpeg" alt="aboutimg3" height="1000" />
+            </a>
+
+            <!-- Legal Advice Card -->
+            <a class="linkcard4" href="/speech.html" replace>
+                <div class="card4" style="opacity: 1; visibility: visible;">
+                    Text to speech
+                </div>
+                <img class="aboutimg" src="aboutimg4.jpeg" alt="aboutimg4" height="1000" />
+            </a>
+
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</body>
+
+</html>

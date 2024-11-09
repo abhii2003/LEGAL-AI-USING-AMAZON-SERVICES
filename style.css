@@ -1,0 +1,252 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    margin: auto;
+
+    color: #ffffff;
+    background-color: #000000;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+/* General section styling */
+.home {
+    height: max(700px, 100vh);
+    display: flex;
+    justify-content: center;
+    scroll-margin-top: 3.6em;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Section wrapper styling */
+.sectionWrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(200, 8px);
+    width: 100%;
+    height: 95vh;
+}
+
+/* Title section styling */
+.title {
+    grid-row: 30 / span 30;
+    grid-column: 2 / span 4;
+    transform: translate(-50px, 0);
+}
+
+.title h1 {
+    font-family: 'Manrope', sans-serif;
+    color: #ffffff;
+    /* Replace with your $secondary-color variable */
+    font-size: 7.2em;
+    font-weight: 100;
+}
+
+.title p {
+    font-family: 'Manrope', sans-serif;
+    color: #ffffff;
+    /* Replace with your $secondary-color variable */
+    font-size: 1.7em;
+    font-weight: 100;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+/* Image styling */
+.homeImage {
+    grid-row: 10 / span 70;
+    grid-column: 6 / span 7;
+    transform: translate(100px, 0);
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+/* Button container styling */
+.btnContainer {
+    grid-row: 75;
+    grid-column: 7;
+    transform: rotate(90deg);
+    width: 50px;
+    height: 50px;
+}
+
+/* Button styling */
+.btn {
+    width: 50px;
+    height: 50px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 4em;
+    color: transparent;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.span_arrow {
+    width: 50px;
+    height: 50px;
+    color: #ffffff;
+    /* Replace with your $secondary-color variable */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+textarea,
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+p {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about {
+    height: max(700px, 100vh);
+    justify-items: center;
+    column-gap: 1em;
+    display: grid;
+    scroll-margin-top: 3.6em;
+}
+
+.sectionWrapperabout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(200, 8px);
+    width: 100%;
+    column-gap: 1em;
+    background: url('bg-about.jpeg');
+}
+
+/* Heading */
+.heading {
+    font-family: 'Golos Text', sans-serif;
+    font-size: 5em;
+    margin: 20px;
+    margin-left: 85px;
+    grid-column: 1 / span 6;
+    grid-row: 7 / span 20;
+    color: #ffffff;
+    /* replace with actual secondary-color */
+}
+
+/* Content */
+.content {
+    grid-column: 1 / span 12;
+    grid-row: 26 / span 14;
+    color: #cdcdcd;
+    /* replace with actual secondary-color */
+    font-family: 'Golos Text', sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Cards */
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    margin-top: 250px;
+    width: 13em;
+    margin-left: 0px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #6b6b6b;
+    /* replace with actual secondary-color */
+    font-family: 'Golos Text', sans-serif;
+}
+
+.card1 {
+    grid-row: 45 / span 35;
+    grid-column: 2 / span 2;
+}
+
+.card2 {
+    grid-row: 45 / span 35;
+    grid-column: 5 / span 2;
+}
+
+.card3 {
+    grid-row: 45 / span 35;
+    grid-column: 8 / span 2;
+    visibility: visible;
+    opacity: 1;
+}
+
+.card4 {
+    grid-row: 45 / span 35;
+    grid-column: 11 / span 2;
+}
+
+/* Link Cards */
+.linkcard1,
+.linkcard2,
+.linkcard3,
+.linkcard4,
+.linkcard5 {
+    width: 13em;
+    margin-left: 0px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    /* replace with actual secondary-color */
+    font-family: 'Golos Text', sans-serif;
+    background: linear-gradient(to top, black, white 100%);
+    transform: translate(-50px, 0);
+}
+
+.linkcard1 {
+    grid-row: 45 / span 35;
+    grid-column: 2 / span 2;
+}
+
+.linkcard2 {
+    grid-row: 45 / span 35;
+    grid-column: 3 / span 2;
+}
+
+.linkcard3 {
+    grid-row: 45 / span 35;
+    grid-column: 4 / span 2;
+}
+
+.linkcard4 {
+    grid-row: 45 / span 35;
+    grid-column: 5 / span 2;
+}
+
+/* About Image */
+.aboutimg {
+    height: 13em;
+    width: 13em;
+}
